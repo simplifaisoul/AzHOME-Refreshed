@@ -23,6 +23,7 @@ export default function Services() {
       icon: Construction,
       title: "Interlock Design & Installation",
       description: "Professional interlock solutions with unbeatable rates",
+      link: "/services/interlock",
       features: [
         "Custom patio design and installation",
         "Professional driveway solutions",
@@ -35,6 +36,7 @@ export default function Services() {
       icon: Hammer,
       title: "Concrete Solutions",
       description: "Expert concrete services for all your needs",
+      link: "/services/concrete",
       features: [
         "Walkways and concrete slabs",
         "Retaining walls and steps",
@@ -49,6 +51,7 @@ export default function Services() {
       icon: Wrench,
       title: "Interior Renovation",
       description: "Complete renovation solutions",
+      link: "/services/interior",
       features: [
         "Complete bathroom renovations",
         "Space-efficient designs",
