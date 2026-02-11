@@ -1,14 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { 
-  Hammer, 
+import {
+  Hammer,
   Construction,
   Wrench,
   CheckCircle2,
   Shield,
-  Clock
+  Clock,
+  ArrowRight
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Services() {
   const [ref, inView] = useInView({
@@ -53,6 +55,19 @@ export default function Services() {
         "Full basement transformations",
         "Special rates for 40sqft bathrooms",
         "Custom interior solutions"
+      ]
+    },
+    {
+      icon: Hammer,
+      title: "Concrete Cutting & Coring",
+      description: "Precision cutting and coring services",
+      link: "/services/concrete-cutting",
+      features: [
+        "Slab and wall cutting",
+        "Concrete coring (Core Drilling)",
+        "Saw cutting",
+        "Detailed precision work",
+        "Interior and exterior"
       ]
     }
   ];
@@ -122,6 +137,16 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
+                  {service.link && (
+                    <div className="mt-8">
+                      <Link
+                        to={service.link}
+                        className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 hover:underline"
+                      >
+                        Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}
@@ -159,19 +184,19 @@ export default function Services() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Start Your Project?</h2>
           <p className="text-xl text-gray-600 mb-8">Contact us today for a free consultation and quote</p>
           <div className="space-y-4 md:space-y-0 md:flex md:justify-center md:space-x-6">
-            <a 
+            <a
               href="tel:343-558-2330"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300"
             >
               Call: 343-558-2330
             </a>
-            <a 
+            <a
               href="tel:613-700-3264"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300"
             >
               Call: 613-700-3264
             </a>
-            <a 
+            <a
               href="mailto:info@azhomerenovation.ca"
               className="inline-flex items-center px-6 py-3 border border-blue-600 text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 transition-colors duration-300"
             >

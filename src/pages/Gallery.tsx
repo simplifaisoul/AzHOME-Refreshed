@@ -121,6 +121,62 @@ export default function Gallery() {
         title: 'Completed Egress Window',
         description: 'After: Professional window installation'
       }
+    ],
+    concreteCutting: [
+      {
+        url: '/images/concrete-cutting-1.jpg',
+        alt: 'Concrete Cutting',
+        title: 'Precision Cutting',
+        description: 'High-performance concrete cutting'
+      },
+      {
+        url: '/images/concrete-cutting-2.jpg',
+        alt: 'Concrete Cutting',
+        title: 'Wall Sawing',
+        description: 'Professional wall sawing services'
+      },
+      {
+        url: '/images/concrete-cutting-3.jpg',
+        alt: 'Concrete Cutting',
+        title: 'Site Preparation',
+        description: 'Preparing sites with precision cuts'
+      },
+      {
+        url: '/images/concrete-cutting-4.jpg',
+        alt: 'Concrete Cutting',
+        title: 'Detailed Work',
+        description: 'Clean and precise concrete work'
+      },
+      {
+        url: '/images/core-drilling.jpg',
+        alt: 'Core Drilling',
+        title: 'Concrete Coring',
+        description: 'Precision core drilling services'
+      },
+      {
+        url: '/images/gallery-new-1.jpg',
+        alt: 'Project Gallery',
+        title: 'Recent Projects',
+        description: 'Showcase of recent work'
+      },
+      {
+        url: '/images/gallery-new-2.jpg',
+        alt: 'Project Gallery',
+        title: 'Recent Projects',
+        description: 'Showcase of recent work'
+      },
+      {
+        url: '/images/gallery-new-3.jpg',
+        alt: 'Project Gallery',
+        title: 'Recent Projects',
+        description: 'Showcase of recent work'
+      },
+      {
+        url: '/images/gallery-new-4.jpg',
+        alt: 'Project Gallery',
+        title: 'Recent Projects',
+        description: 'Showcase of recent work'
+      }
     ]
   };
 
@@ -169,6 +225,12 @@ export default function Gallery() {
           <div>
             <h2 className="text-3xl font-bold text-center mb-8">Specialty Services</h2>
             <ImageCarousel images={projectImages.specialtyWork} />
+          </div>
+
+          {/* Concrete Cutting & Coring */}
+          <div className="mt-20">
+            <h2 className="text-3xl font-bold text-center mb-8">Concrete Cutting & Coring</h2>
+            <ImageCarousel images={projectImages.concreteCutting} />
           </div>
         </div>
       </section>
