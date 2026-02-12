@@ -7,7 +7,7 @@ import { ArrowRight, Star, Phone, MapPin, Clock, CheckCircle2, Hammer, Construct
 export default function Home() {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
-  
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
@@ -43,6 +43,7 @@ export default function Home() {
       icon: Hammer,
       title: "Professional Concrete Work",
       items: [
+        "Concrete coring & cutting",
         "Foundation repair & waterproofing",
         "Concrete slabs & driveways",
         "Garage floor solutions",
@@ -96,7 +97,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="absolute inset-0"
           >
-            <div 
+            <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
             >
@@ -212,7 +213,7 @@ export default function Home() {
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/90 to-slate-900/80 backdrop-blur-sm" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16">
             {features.map((feature, index) => (
@@ -225,22 +226,22 @@ export default function Home() {
                 className="relative group"
               >
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 rounded-2xl opacity-75 blur group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient-x" />
-                
+
                 <div className="relative flex flex-col h-full bg-slate-900/90 backdrop-blur-xl rounded-xl p-6 md:p-8 border border-white/10">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="p-2 md:p-3 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600">
+                    <div className="p-2 md:p-3 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-600">
                       <feature.icon className="h-6 w-6 md:h-8 md:w-8 text-white" />
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">
+                    <h3 className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-purple-400">
                       {feature.title}
                     </h3>
                   </div>
-                  
+
                   <ul className="space-y-3 md:space-y-4 flex-grow">
                     {feature.items.map((item, itemIndex) => (
                       <li key={itemIndex} className="flex items-center text-gray-300 group/item">
-                        <span className="flex items-center justify-center w-5 h-5 md:w-6 md:h-6 mr-3 rounded-full bg-blue-500/10 group-hover/item:bg-blue-500/20 transition-colors duration-200">
-                          <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-cyan-400 group-hover/item:text-cyan-300" />
+                        <span className="flex items-center justify-center w-5 h-5 md:w-6 md:h-6 mr-3 rounded-full bg-purple-500/10 group-hover/item:bg-purple-500/20 transition-colors duration-200">
+                          <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-cyan-300 group-hover/item:text-purple-300" />
                         </span>
                         <span className="text-sm md:text-base group-hover/item:text-white transition-colors duration-200">
                           {item}
@@ -259,10 +260,10 @@ export default function Home() {
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900" />
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12 md:mb-16">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -292,7 +293,7 @@ export default function Home() {
                 className="group relative"
               >
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 rounded-2xl opacity-75 blur group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient-x" />
-                
+
                 <div className="relative bg-slate-900/90 rounded-xl overflow-hidden">
                   <div className="aspect-video overflow-hidden">
                     <img
@@ -301,9 +302,9 @@ export default function Home() {
                       className="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
                     />
                   </div>
-                  
+
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  
+
                   <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                     <div className="transform translate-y-4 group-hover:translate-y-0 transition duration-300">
                       <span className="inline-block px-3 md:px-4 py-1 rounded-full bg-primary-500/20 border border-primary-500/30 text-primary-400 text-xs md:text-sm font-semibold mb-2 md:mb-3">

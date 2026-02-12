@@ -154,6 +154,12 @@ export default function Gallery() {
         description: 'Precision core drilling services'
       },
       {
+        url: '/images/concrete-cutting-equipment.jpg',
+        alt: 'Concrete Cutting Equipment',
+        title: 'Professional Cutting Equipment',
+        description: 'State-of-the-art concrete cutting machinery'
+      },
+      {
         url: '/images/gallery-new-1.jpg',
         alt: 'Project Gallery',
         title: 'Recent Projects',
