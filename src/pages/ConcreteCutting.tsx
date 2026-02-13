@@ -143,11 +143,11 @@ export default function ConcreteCutting() {
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg h-80">
+            <div className="rounded-xl overflow-hidden shadow-lg h-80 bg-gray-100">
               <img
                 src="/images/concrete-cutting-equipment.jpg"
                 alt="Precision Cutting"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
