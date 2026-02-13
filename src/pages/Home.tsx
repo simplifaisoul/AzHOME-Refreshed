@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, Phone, MapPin, Clock, CheckCircle2, Hammer, Construction, PaintBucket } from 'lucide-react';
+import { ArrowRight, Star, Phone, MapPin, Clock, CheckCircle2, Hammer, Construction, PaintBucket, Wrench } from 'lucide-react';
 
 export default function Home() {
   const { scrollY } = useScroll();
