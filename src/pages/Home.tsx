@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, Phone, MapPin, Clock, CheckCircle2, Hammer, Construction } from 'lucide-react';
+import { ArrowRight, Star, Phone, MapPin, Clock, CheckCircle2, Hammer, Construction, PaintBucket } from 'lucide-react';
 
 export default function Home() {
   const { scrollY } = useScroll();
@@ -24,6 +24,11 @@ export default function Home() {
       image: "//img1.wsimg.com/isteam/ip/a931a610-be40-4e17-907d-d49693ad4cff/1.JPG",
       title: "Quality Concrete Work",
       description: "Superior concrete solutions for residential and commercial projects"
+    },
+    {
+      image: "/images/Egress window installation And After.jpg",
+      title: "Expert Interior Renovation",
+      description: "Complete basement finishing, bathroom remodeling, and interior updates"
     }
   ];
 
@@ -50,6 +55,17 @@ export default function Home() {
         "Steps & walkways",
         "Expert crack repair"
       ]
+    },
+    {
+      icon: PaintBucket,
+      title: "Interior Renovation",
+      items: [
+        "Basement finishing",
+        "Bathroom remodeling",
+        "Egress windows",
+        "Flooring & Tiling",
+        "Drywall & Painting"
+      ]
     }
   ];
 
@@ -73,6 +89,11 @@ export default function Home() {
       image: "/images/Interlock Driveway.jpg",
       category: "Interlock",
       title: "Premium Driveway Installation"
+    },
+    {
+      image: "/images/Egress window installation And After.jpg",
+      category: "Renovation",
+      title: "Basement Transformation"
     }
   ];
 
