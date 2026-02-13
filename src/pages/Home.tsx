@@ -66,6 +66,17 @@ export default function Home() {
         "Flooring & Tiling",
         "Drywall & Painting"
       ]
+    },
+    {
+      icon: Wrench,
+      title: "Concrete Cutting & Coring",
+      items: [
+        "Slab & Wall Cutting",
+        "Core Drilling",
+        "Door/Window Openings",
+        "Trenching for Utilities",
+        "Expansion Joints"
+      ]
     }
   ];
 
