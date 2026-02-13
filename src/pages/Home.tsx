@@ -175,7 +175,7 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 className="mb-6 md:mb-8"
               >
-                <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 md:mb-6 leading-tight">
+                <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 md:mb-6 leading-tight">
                   <span className="block bg-clip-text text-transparent bg-gradient-to-r from-white via-primary-400 to-white">
                     {slides[currentSlide].title}
                   </span>
@@ -194,7 +194,7 @@ export default function Home() {
               >
                 <Link
                   to="/contact"
-                  className="group relative px-6 md:px-8 py-3 md:py-4 bg-primary-600 overflow-hidden rounded-lg transition-all duration-300"
+                  className="group relative px-6 md:px-8 py-3 md:py-4 bg-primary-600 overflow-hidden rounded-lg transition-all duration-300 w-full sm:w-auto"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-500 transition-transform duration-300 group-hover:scale-110" />
                   <span className="relative flex items-center justify-center text-base md:text-lg font-semibold">
@@ -204,7 +204,7 @@ export default function Home() {
                 </Link>
                 <Link
                   to="/gallery"
-                  className="group px-6 md:px-8 py-3 md:py-4 border border-white/20 rounded-lg hover:bg-white/10 transition-all duration-300"
+                  className="group px-6 md:px-8 py-3 md:py-4 border border-white/20 rounded-lg hover:bg-white/10 transition-all duration-300 w-full sm:w-auto"
                 >
                   <span className="flex items-center justify-center text-base md:text-lg font-semibold">
                     View Our Work
@@ -218,7 +218,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 px-4"
+                className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-8 px-4"
               >
                 {[
                   { number: "15+", label: "Years Experience" },
@@ -227,12 +227,12 @@ export default function Home() {
                 ].map((stat, index) => (
                   <div
                     key={index}
-                    className="p-4 md:p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10"
+                    className={`p-3 md:p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 ${index === 2 ? 'col-span-2 sm:col-span-1' : ''}`}
                   >
-                    <div className="text-3xl md:text-4xl font-bold text-primary-400 mb-1 md:mb-2">
+                    <div className="text-2xl md:text-4xl font-bold text-primary-400 mb-1 md:mb-2">
                       {stat.number}
                     </div>
-                    <div className="text-sm md:text-base text-gray-400">{stat.label}</div>
+                    <div className="text-xs md:text-base text-gray-400">{stat.label}</div>
                   </div>
                 ))}
               </motion.div>
