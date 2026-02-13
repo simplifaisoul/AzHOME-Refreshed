@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { 
-  Hammer, 
+import {
+  Hammer,
   Construction,
   Wrench,
   CheckCircle2,
@@ -54,17 +54,17 @@ export default function ConcreteCutting() {
       {/* Hero Section */}
       <section className="relative py-20 bg-gray-900 text-white">
         <div className="absolute inset-0 overflow-hidden">
-           <img 
-            src="/images/concrete-cutting-1.jpg" 
-            alt="Concrete Cutting Hero" 
+          <img
+            src="/images/concrete-cutting-3.jpg"
+            alt="Concrete Cutting Hero"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-gray-900" />
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -72,7 +72,7 @@ export default function ConcreteCutting() {
             >
               Concrete Cutting & Coring Services
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -97,9 +97,9 @@ export default function ConcreteCutting() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Professional Precision</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We provide professional concrete cutting and coring services for residential, commercial, and industrial projects. 
-              Whether you need clean openings for plumbing and electrical, controlled slab removal, or structural modifications, 
-              our experienced team delivers precise results with minimal disruption. Using modern, high-performance equipment, 
+              We provide professional concrete cutting and coring services for residential, commercial, and industrial projects.
+              Whether you need clean openings for plumbing and electrical, controlled slab removal, or structural modifications,
+              our experienced team delivers precise results with minimal disruption. Using modern, high-performance equipment,
               we cut through reinforced concrete, asphalt, masonry, and stone safely and efficiently—no guesswork, no unnecessary damage.
             </p>
           </div>
@@ -116,9 +116,9 @@ export default function ConcreteCutting() {
                 className="bg-gray-50 rounded-xl p-8 shadow-lg border border-gray-100"
               >
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                  {index === 0 ? <Construction className="h-6 w-6 text-blue-600" /> : 
-                   index === 1 ? <Hammer className="h-6 w-6 text-blue-600" /> : 
-                   <Wrench className="h-6 w-6 text-blue-600" />}
+                  {index === 0 ? <Construction className="h-6 w-6 text-blue-600" /> :
+                    index === 1 ? <Hammer className="h-6 w-6 text-blue-600" /> :
+                      <Wrench className="h-6 w-6 text-blue-600" />}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h3>
                 <p className="text-gray-600 mb-6">{feature.description}</p>
@@ -136,20 +136,20 @@ export default function ConcreteCutting() {
 
           {/* Image Showcase */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-             <div className="rounded-xl overflow-hidden shadow-lg h-80">
-                <img 
-                  src="/images/core-drilling.jpg" 
-                  alt="Concrete Coring" 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-             </div>
-             <div className="rounded-xl overflow-hidden shadow-lg h-80">
-                <img 
-                  src="/images/concrete-cutting-2.jpg" 
-                  alt="Precision Cutting" 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-             </div>
+            <div className="rounded-xl overflow-hidden shadow-lg h-80">
+              <img
+                src="/images/concrete-cutting-4.jpg"
+                alt="Concrete Coring"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg h-80">
+              <img
+                src="/images/concrete-cutting-equipment.jpg"
+                alt="Precision Cutting"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
           </div>
         </div>
       </section>
