@@ -1,21 +1,15 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 import {
   Hammer,
   Construction,
   Wrench,
   CheckCircle2,
-  AlertTriangle,
   ArrowRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function ConcreteCutting() {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
 
   const features = [
     {
@@ -135,7 +129,7 @@ export default function ConcreteCutting() {
           </div>
 
           {/* Image Showcase */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="rounded-xl overflow-hidden shadow-lg h-80">
               <img
                 src="/images/concrete-cutting-4.jpg"
@@ -148,6 +142,13 @@ export default function ConcreteCutting() {
                 src="/images/concrete-cutting-equipment.jpg"
                 alt="Precision Cutting"
                 className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg h-80">
+              <img
+                src="/images/Egress window installation And After.jpg"
+                alt="Egress Window Cutting"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>

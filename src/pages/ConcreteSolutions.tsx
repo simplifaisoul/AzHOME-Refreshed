@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, ShieldCheck, Layers, PenTool } from 'lucide-react';
@@ -113,27 +113,39 @@ export default function ConcreteSolutions() {
                                     ))}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-2 gap-4">
-                                <img
-                                    src="/images/Concrete garage floor replacement.png"
-                                    alt="Garage Floor"
-                                    className="rounded-xl shadow-md w-full h-48 object-cover"
-                                />
-                                <img
-                                    src="/images/Concrete steps and landing.png"
-                                    alt="Concrete Steps"
-                                    className="rounded-xl shadow-md w-full h-48 object-cover"
-                                />
-                                <img
-                                    src="/images/Concrete crack injection and waterproofing.jpg"
-                                    alt="Crack Injection"
-                                    className="rounded-xl shadow-md w-full h-48 object-cover"
-                                />
-                                <img
-                                    src="/images/Concrete garage floor resurfacing.png"
-                                    alt="Resurfacing"
-                                    className="rounded-xl shadow-md w-full h-48 object-cover"
-                                />
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="space-y-4">
+                                    <img
+                                        src="/images/Concrete garage floor replacement.png"
+                                        alt="Garage Floor"
+                                        className="rounded-xl shadow-md w-full h-64 object-cover hover:shadow-xl transition-shadow duration-300"
+                                    />
+                                    <p className="text-sm text-gray-500 text-center italic">Garage Floor Replacement</p>
+                                </div>
+                                <div className="space-y-4">
+                                    <img
+                                        src="/images/Concrete steps and landing.png"
+                                        alt="Concrete Steps"
+                                        className="rounded-xl shadow-md w-full h-64 object-cover hover:shadow-xl transition-shadow duration-300"
+                                    />
+                                    <p className="text-sm text-gray-500 text-center italic">Steps & Landing</p>
+                                </div>
+                                <div className="space-y-4">
+                                    <img
+                                        src="/images/Concrete crack injection and waterproofing.jpg"
+                                        alt="Crack Injection"
+                                        className="rounded-xl shadow-md w-full h-64 object-cover hover:shadow-xl transition-shadow duration-300"
+                                    />
+                                    <p className="text-sm text-gray-500 text-center italic">Waterproofing Injection</p>
+                                </div>
+                                <div className="space-y-4">
+                                    <img
+                                        src="/images/Concrete garage floor resurfacing.png"
+                                        alt="Resurfacing"
+                                        className="rounded-xl shadow-md w-full h-64 object-cover hover:shadow-xl transition-shadow duration-300"
+                                    />
+                                    <p className="text-sm text-gray-500 text-center italic">Floor Resurfacing</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Bath, Ruler, PaintBucket, CheckCircle2 } from 'lucide-react';
@@ -11,7 +11,7 @@ export default function InteriorRenovation() {
                 <div className="absolute inset-0">
                     {/* Using Egress window image as fallback for interior context, blurred for background */}
                     <img
-                        src="/images/Egress window installation And After.jpg"
+                        src="/images/gallery-new-4.jpg"
                         alt="Interior Renovation"
                         className="w-full h-full object-cover opacity-20 blur-sm"
                     />
@@ -124,20 +124,8 @@ export default function InteriorRenovation() {
                                 ))}
                             </ul>
 
-                            <div className="mt-8 relative overflow-hidden rounded-xl h-64 shadow-lg">
-                                <img
-                                    src="/images/Egress window installation Before.jpg"
-                                    alt="Before Renovation"
-                                    className="absolute left-0 top-0 w-1/2 h-full object-cover"
-                                />
-                                <img
-                                    src="/images/Egress window installation And After.jpg"
-                                    alt="After Renovation"
-                                    className="absolute right-0 top-0 w-1/2 h-full object-cover"
-                                />
-                                <div className="absolute inset-x-0 bottom-0 bg-black/60 text-white text-xs py-1 text-center font-mono">
-                                    BEFORE // AFTER
-                                </div>
+                            <div className="mt-8 relative overflow-hidden rounded-xl h-64 shadow-lg bg-gray-100 flex items-center justify-center">
+                                <p className="text-gray-400 font-medium">Image coming soon</p>
                             </div>
                         </div>
                     </div>
