@@ -2,8 +2,36 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Bath, Ruler, PaintBucket, CheckCircle2 } from 'lucide-react';
+import ImageCarousel from '../components/ImageCarousel';
 
 export default function InteriorRenovation() {
+    const interiorImages = [
+        {
+            url: '/images/interior-renovation-1.jpg',
+            alt: 'Interior Renovation Project 1',
+            title: 'Modern Interior Update',
+            description: 'Quality craftsmanship in every detail'
+        },
+        {
+            url: '/images/interior-renovation-2.jpg',
+            alt: 'Interior Renovation Project 2',
+            title: 'Basement Finishing',
+            description: 'Transforming storage space into living space'
+        },
+        {
+            url: '/images/interior-renovation-3.jpg',
+            alt: 'Interior Renovation Project 3',
+            title: 'Bathroom Remodel',
+            description: 'Modern fixtures and efficient design'
+        },
+        {
+            url: '/images/interior-renovation-4.jpg',
+            alt: 'Interior Renovation Project 4',
+            title: 'Living Area Renovation',
+            description: 'Creating comfortable spaces for your family'
+        }
+    ];
+
     return (
         <div className="bg-white">
             {/* Hero Section */}
@@ -124,8 +152,8 @@ export default function InteriorRenovation() {
                                 ))}
                             </ul>
 
-                            <div className="mt-8 relative overflow-hidden rounded-xl h-64 shadow-lg bg-gray-100 flex items-center justify-center">
-                                <p className="text-gray-400 font-medium">Image coming soon</p>
+                            <div className="mt-8 shadow-lg rounded-xl overflow-hidden">
+                                <ImageCarousel images={interiorImages} />
                             </div>
                         </div>
                     </div>
