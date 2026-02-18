@@ -7,28 +7,28 @@ import ImageCarousel from '../components/ImageCarousel';
 export default function InteriorRenovation() {
     const interiorImages = [
         {
-            url: '/images/interior-renovation-1.jpg',
-            alt: 'Interior Renovation Project 1',
-            title: 'Modern Interior Update',
-            description: 'Quality craftsmanship in every detail'
+            url: '/images/Basement Reno After.jpg',
+            alt: 'Basement Renovation After',
+            title: 'Finished Basement',
+            description: 'Modern, clean finish for your lower level'
         },
         {
-            url: '/images/interior-renovation-2.jpg',
-            alt: 'Interior Renovation Project 2',
-            title: 'Basement Finishing',
-            description: 'Transforming storage space into living space'
+            url: '/images/Basement Reno Before.jpg',
+            alt: 'Basement Renovation Before',
+            title: 'Basement Transformation',
+            description: 'From unfinished to unbelievable'
         },
         {
-            url: '/images/interior-renovation-3.jpg',
-            alt: 'Interior Renovation Project 3',
-            title: 'Bathroom Remodel',
-            description: 'Modern fixtures and efficient design'
+            url: '/images/Bathroom Reno.png',
+            alt: 'Bathroom Renovation',
+            title: 'Modern Bathroom',
+            description: 'Sleek and functional bathroom updates'
         },
         {
-            url: '/images/interior-renovation-4.jpg',
-            alt: 'Interior Renovation Project 4',
-            title: 'Living Area Renovation',
-            description: 'Creating comfortable spaces for your family'
+            url: '/images/Bathroom Reno Collage.png',
+            alt: 'Bathroom Renovation Collage',
+            title: 'Detailed Craftsmanship',
+            description: 'Quality work in every corner'
         }
     ];
 
